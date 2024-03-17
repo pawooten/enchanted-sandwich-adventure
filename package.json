@@ -1,0 +1,24 @@
+{
+  "name": "enchanted-sandwich-adventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawooten/enchanted-sandwich-adventure.git"
+  },
+  "author": "Paul Wooten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawooten/enchanted-sandwich-adventure/issues"
+  },
+  "homepage": "https://github.com/pawooten/enchanted-sandwich-adventure#readme",
+  "dependencies": {
+    "phaser": "^3.80.1",
+    "typescript": "^5.4.2"
+  }
+}
