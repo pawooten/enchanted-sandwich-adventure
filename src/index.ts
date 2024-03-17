@@ -1,19 +1,22 @@
 import Phaser from "phaser";
-
-// import iceBackgroundImage from '../assets/ice-background.png';
-// import cloudImage from '../assets/cloud.png';
+import columnImage from '../assets/column.png';
+import platterImage from '../assets/platter.png';
 
 class Example extends Phaser.Scene
 {
     preload ()
     {
-        // this.load.image('cloud', cloudImage);
-        // this.load.image('ice-background', iceBackgroundImage);
+        this.load.image('column', columnImage);
+        this.load.image('platter', platterImage);
     }
     create ()
     {
-        // this.add.image(400, 300, 'ice-background');
-        // this.add.image(200, 300, 'cloud');
+        const columnCenters = [60, 196, 332, 468, 604, 740];
+
+        for (const columnCenter of columnCenters) {
+            this.add.image(columnCenter, 300, 'column');
+            this.add.image(columnCenter, 580, 'platter');
+        }
     }
 }
 
